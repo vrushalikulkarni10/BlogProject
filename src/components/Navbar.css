@@ -1,0 +1,101 @@
+@import url(
+
+);
+
+*{
+    padding : 0;
+    margin : 0; 
+    /* box-sizing : border-box; */
+}
+body{
+    background: #C4DAD2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background: #16423C;
+    box-shadow: 0 0 5px rgba(8, 18, 14, 0.584);
+    padding: 2rem 0;
+
+}
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 0 1rem; */
+}
+.container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25px;
+    
+}
+.container nav.logo{
+    color: hsl(150, 16%, 93%);
+    font-size: 1.2rem;
+    cursor: pointer;
+    
+}
+.logo {
+        font-size: 2rem; /* Adjust this value to change the size of the icon */
+        color: #E9EFEC; /* Optional: change the color of the icon */
+        display: flex; /* Center the icon if needed */
+        align-items: center; /* Center the icon vertically */
+    }
+
+h2{
+    color: #E9EFEC;
+    margin-right: 10px;
+}
+.container .nav-link{
+    display: flex;
+
+}
+
+.container .nav-link li{
+    list-style: none;
+    margin: 0 0.5rem;  
+}
+.container ul li a{
+    color: #E9EFEC;
+    font-size: 1.3rem;
+    padding: 0.7rem 1rem;
+    display: block;
+    border-radius: 1px;
+    border-radius: 4px;
+}
+.container ul li a:hover, .container ul li a.active{
+    background-color: #16423C;
+}
+.icon{
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+
+}
+@media(max-width: 498px){
+    .content h2{
+        font-size: 4rem;
+        text-align: center;
+    }
+    .icon{
+        display: block;
+    }
+    .container .nav-link{
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #ffff;
+        position: absolute;
+        width: 150px;
+        height: 50vh;
+        top: -800px;
+        right: 0;
+        z-index: 10;
+    }
+    .nav-link.active{
+        top: 10%;
+    }
+}
