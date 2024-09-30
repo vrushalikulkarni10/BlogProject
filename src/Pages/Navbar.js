@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import './Navbar.css'
 import { FaBars } from "react-icons/fa";
 import { RiAccountCircleFill } from "react-icons/ri";
+import { Link, NavLink } from 'react-router-dom'
+
 function Navbar() {
 
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +15,7 @@ function Navbar() {
   return (
     <>
     <header>
-    <div className="container">
+    <div className="nav-container">
       <nav>
         <div className="logo">
         <RiAccountCircleFill />
@@ -29,7 +31,7 @@ function Navbar() {
             <a href="/Dashboard">Dashboard</a>
           </li>
           <li>
-            <a href="/Logout">Logout</a>
+          <NavLink to="/Login">Login</NavLink>
           </li>
         </ul>
         <div className="icon" onClick={toggleMenu}>

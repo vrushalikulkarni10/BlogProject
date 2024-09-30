@@ -20,20 +20,20 @@ header{
     padding: 2rem 0;
 
 }
-.container{
+.nav-container{
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
     /* padding: 0 1rem; */
 }
-.container nav{
+.nav-container nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 25px;
     
 }
-.container nav.logo{
+.nav-container nav.logo{
     color: hsl(150, 16%, 93%);
     font-size: 1.2rem;
     cursor: pointer;
@@ -50,16 +50,16 @@ h2{
     color: #E9EFEC;
     margin-right: 10px;
 }
-.container .nav-link{
+.nav-container .nav-link{
     display: flex;
 
 }
 
-.container .nav-link li{
+.nav-container .nav-link li{
     list-style: none;
     margin: 0 0.5rem;  
 }
-.container ul li a{
+.nav-container ul li a{
     color: #E9EFEC;
     font-size: 1.3rem;
     padding: 0.7rem 1rem;
@@ -67,7 +67,7 @@ h2{
     border-radius: 1px;
     border-radius: 4px;
 }
-.container ul li a:hover, .container ul li a.active{
+.nav-container ul li a:hover, .nav-container ul li a.active{
     background-color: #16423C;
 }
 .icon{
@@ -84,7 +84,7 @@ h2{
     .icon{
         display: block;
     }
-    .container .nav-link{
+    .nav-container .nav-link{
         flex-direction: column;
         justify-content: space-evenly;
         background-color: #ffff;

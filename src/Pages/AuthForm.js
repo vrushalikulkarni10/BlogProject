@@ -5,7 +5,7 @@ import './AuthForm.css';
 export default function AuthForm() {
   const [isLogin, setIsLogin] = useState(true);
     return (
-    <div className='container'>
+    <div className='auth-container'>
         <div className='form-container'>
             {isLogin ? <>
             <div className='form'>
